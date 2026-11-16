@@ -53,6 +53,7 @@ word_timestamps: [
 
 - Pass `language: null` to auto-detect (adds ~1s overhead).
 - Pass an explicit ISO 639-1 code (`en`, `es`, `ja`, etc.) when you know the language.
+- Spanish (this studio): `model_size: "small"` and `language: "es"`. Never `small.en` — the `.en` weights translate speech into English. See `ESTUDIO.md`.
 
 ## Quality Checklist
 

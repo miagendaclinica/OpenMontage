@@ -86,6 +86,7 @@ The corollary: the per-scene plan is a *first-class artifact*, not implied. Writ
 
 ### 2. Decide the motion language — principles, not presets
 Reach for **principle** skills, never finished animations:
+- **`motion-cinco-efectos`** — ten house techniques for every explainer or motion scene (mask reveals, chained motion, camera follow, morph transitions, narration sync, bounce easing, stagger, parallax, micro-movement, light-bar reveal). Apply all of them unless the brief says otherwise. Read `.agents/skills/motion-cinco-efectos/SKILL.md` before writing keyframes.
 - **`framer-motion`** and **`lottie-bodymovin`** — Disney's 12 principles (anticipation, staging,
   follow-through, slow-in/out, arc, timing, exaggeration, appeal). Runtime-agnostic; apply the
   *principles* in your own Remotion `spring()`/`interpolate()` code.

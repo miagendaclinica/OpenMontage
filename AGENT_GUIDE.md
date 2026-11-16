@@ -145,6 +145,14 @@ Orthogonal to *runtime* is *authoring mode*: **how** the composition is built. P
 
 **Default to atelier for hero work** — marketing, launches, brand pieces, any single-deliverable explainer that must impress. The deciding rule: *reuse engine knowledge, never creative components.* In atelier mode the stock scene-type catalog, `hyperframes-registry` blocks, fixtures, and finished components are **off-limits** — they are frozen looks that reintroduce sameness. Before building, route through **`skills/meta/taste-direction.md`** to set the design read and taste dials, then **`skills/meta/bespoke-composition.md`**, which sequences: art direction (`visual-style`) → motion principles (Disney 12 via `framer-motion`/`lottie-bodymovin`) → engine mechanics (`remotion-best-practices` + the stock components read *only as a mechanics codex*) → render via the atelier path. Close with a **distinctness review**: *could this be any other product's video? does it reuse a look I've made before?* — the inverse of "does it match the reference." Atelier costs more tokens and iteration than templated; say so at proposal so the user opts in knowingly.
 
+### Motion house rules (explainers and motion graphics)
+
+Before authoring explainer or motion-graphics scenes — Remotion, HyperFrames, or GSAP — read `.agents/skills/motion-cinco-efectos/SKILL.md` and apply all ten techniques unless the brief says otherwise. The same file is the house style for mask reveals, chained motion, camera follow, morph transitions, narration sync, bounce easing, stagger, parallax, micro-movement, and the light-bar reveal.
+
+### Studio defaults for this fork
+
+This checkout is Pablo's studio (Mi Agenda Clínica). Beginner setup, local helpers, and the Spanish voice notes live in [`ESTUDIO.md`](ESTUDIO.md). When transcribing Spanish with the local `transcriber` tool, set `model_size` to `small` and `language` to `es`. Do not use `small.en`: that model translates speech into English. Piper voices for this studio are `es_MX-ald-medium` and `es_ES-davefx-medium`.
+
 ### Escalate Blockers Explicitly
 
 When a blocker occurs, the agent must surface it immediately using this structure:

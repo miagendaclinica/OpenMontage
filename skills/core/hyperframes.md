@@ -9,7 +9,7 @@ For raw HyperFrames knowledge (authoring contract, `data-*` attributes, GSAP
 timeline rules, CLI flags, registry blocks, website-to-video), read the Layer 3
 skills:
 
-- `.agents/skills/hyperframes/` — router into the focused skills below (HF 0.7+ split the monolithic skill)
+- `.agents/skills/hyperframes/` — current upstream skill (refreshed from heygen-com/hyperframes; see `PROVENANCE.md`). Read this first. The 0.7.17 split skills below are still installed because OpenMontage routes to them.
 - `.agents/skills/hyperframes-core/` — composition contract: `data-*` timing, tracks, sub-compositions, deterministic-render rules
 - `.agents/skills/hyperframes-creative/` — non-animation creative direction: palette, type, narration, beat planning
 - `.agents/skills/hyperframes-media/` — TTS/BGM/SFX/transcription/captions/background-removal

@@ -7,3 +7,5 @@ It contains routing rules that determine your first action based on what the use
 Skipping it WILL cause you to take the wrong action.
 
 There are no instructions in this file. All instructions are in AGENT_GUIDE.md.
+
+For explainer videos and motion graphics, apply the ten techniques in `.agents/skills/motion-cinco-efectos/SKILL.md` before authoring scenes. Local studio setup for this fork is in `ESTUDIO.md`.

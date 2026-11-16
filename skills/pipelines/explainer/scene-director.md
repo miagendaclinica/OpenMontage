@@ -14,6 +14,7 @@ This is where words become visuals. A great script with a bad scene plan produce
 | Prior artifacts | `state.artifacts["script"]["script"]`, `state.artifacts["proposal"]["proposal_packet"]` | Script sections and proposal packet |
 | Playbook | Active style playbook | Visual language, transitions, motion rules |
 | Layer 3 | `.agents/skills/flux-best-practices/`, `.agents/skills/beautiful-mermaid/`, `.agents/skills/manim-composer/` | Image gen, diagram, animation knowledge |
+| Motion | `.agents/skills/motion-cinco-efectos/SKILL.md` | Ten house techniques. Apply all of them to every explainer scene unless the brief says otherwise. |
 
 ## Process
 
@@ -100,7 +101,7 @@ Remotion components with zero external dependencies.
 
 ### Step 4: Apply the Visual Technique Library
 
-These are proven patterns for explainer visuals. Reference them by name in scene descriptions:
+Read `.agents/skills/motion-cinco-efectos/SKILL.md` first and plan every scene with those ten techniques (mask reveals, chained motion, camera follow, morph transitions, narration-synced entries, bounce easing, stagger, parallax, micro-movement, light-bar reveal). Then use the patterns below. Reference them by name in scene descriptions:
 
 **Diagram Reveal**
 Build a diagram progressively — start empty, add components with labels as the narrator describes each part. Perfect for architecture, processes, and systems.

@@ -85,8 +85,8 @@ Key capability families to look for in the output:
 | Skill | File | Trigger | Agent Skills (Layer 3) |
 |-------|------|---------|----------------------|
 | FFmpeg | `core/ffmpeg.md` | Video encoding, filtering, composition | `ffmpeg`, `video-toolkit` |
-| Remotion | `core/remotion.md` | React-based composition, Phase 3+ | `remotion-best-practices`, `remotion` |
-| HyperFrames | `core/hyperframes.md` | HTML/CSS/GSAP composition runtime — kinetic typography, music-to-video, product promos, website capture. Vendored at v0.7.17 (2026-06-27). | `hyperframes` (router) → `hyperframes-core` (contract), `hyperframes-creative` (palette/type/narration), `hyperframes-media` (TTS/BGM/SFX/captions), `hyperframes-animation` (all motion), `hyperframes-cli`, `hyperframes-registry`, `media-use`, `motion-graphics`, `music-to-video` (beats-driven), `website-to-video`, `remotion-to-hyperframes` (migration), `gsap-core`, `gsap-timeline` |
+| Remotion | `core/remotion.md` | React-based composition, Phase 3+ | `remotion-best-practices` (router + preserved `rules/`), `remotion-captions`, `remotion-create`, `remotion-docs`, `remotion-interactivity`, `remotion-license`, `remotion-maps`, `remotion-markup`, `remotion-multimedia`, `remotion-render`, `remotion-saas`, `remotion-studio`, `remotion-upgrade`, `remotion` |
+| HyperFrames | `core/hyperframes.md` | HTML/CSS/GSAP composition runtime — kinetic typography, music-to-video, product promos, website capture. Entry skills refreshed from heygen-com/hyperframes (see `.agents/skills/hyperframes/PROVENANCE.md`). The 0.7.17 split skills remain installed. | `hyperframes`, `hyperframes-cli`, `hyperframes-registry`, `media-use`, `remotion-to-hyperframes`, `figma`, `reverse-any-video`, `slideshow`, `style-sampling`, plus retained `hyperframes-core`, `hyperframes-creative`, `hyperframes-media`, `hyperframes-animation`, `motion-graphics`, `music-to-video`, `website-to-video`, `gsap-core`, `gsap-timeline` |
 | WhisperX | `core/whisperx.md` | Transcription with word-level timestamps — default STT (offline, free) | `speech-to-text` |
 | Azure STT | (tool: `azure_stt`) | Optional cloud speech-to-text, word-level timestamps — preferred when `AZURE_SPEECH_KEY` is set | `azure-speech-to-text` |
 | Azure TTS | (tool: `azure_tts`) | Optional cloud neural narration (SSML prosody, express-as styles) — same Speech key as `azure_stt` | `azure-text-to-speech` |
@@ -327,12 +327,13 @@ Load via `styles/playbook_loader.py`: `load_playbook("clean-professional")`. `li
 ## Installed Agent Skills (Layer 3)
 
 All agent skills live in `.agents/skills/` and are managed via `npx skills add`.
-`ls .agents/skills` is the authoritative list (92 skill directories as of 2026-10-25); the table below groups them by what they are for.
-Claude Code accesses them via symlinks in `.claude/skills/`.
+`ls .agents/skills` is the authoritative list. The table below groups them by what they are for.
+Claude Code and Cursor read the same trees: `.agents/skills/` is canonical, and `.claude/skills/` points at it with relative symlinks for the vendored Remotion, HyperFrames, stickman, and motion skills (older skills may still be full copies). Do not add a second copy or a skill folder at the repository root.
 
 | Category | Installed Skills | Source |
 |----------|-----------------|--------|
-| **Video Composition** | `remotion-best-practices`, `remotion`, `hyperframes` (router), `hyperframes-core`, `hyperframes-creative`, `hyperframes-media`, `hyperframes-animation`, `hyperframes-cli`, `hyperframes-registry`, `media-use`, `motion-graphics`, `music-to-video`, `remotion-to-hyperframes`, `website-to-video` | `remotion-dev/skills`, `digitalsamba/claude-code-video-toolkit`, `heygen-com/hyperframes` (vendored v0.7.17, see `.agents/skills/hyperframes/PROVENANCE.md`) |
+| **Video Composition** | `remotion-best-practices` (router; `rules/` kept), `remotion-captions`, `remotion-create`, `remotion-docs`, `remotion-interactivity`, `remotion-license`, `remotion-maps`, `remotion-markup`, `remotion-multimedia`, `remotion-render`, `remotion-saas`, `remotion-studio`, `remotion-upgrade`, `remotion`, `motion-cinco-efectos`, `hyperframes`, `hyperframes-cli`, `hyperframes-registry`, `figma`, `reverse-any-video`, `slideshow`, `style-sampling`, `media-use`, `remotion-to-hyperframes`, plus retained `hyperframes-core`, `hyperframes-creative`, `hyperframes-media`, `hyperframes-animation`, `motion-graphics`, `music-to-video`, `website-to-video` | `remotion-dev/skills` (`7e541aa`), `digitalsamba/claude-code-video-toolkit`, `heygen-com/hyperframes` (`4067efc`, see `.agents/skills/hyperframes/PROVENANCE.md`), local `motion-cinco-efectos` |
+| **Stickman videos** | `directing-stickman-videos` | `kaomei/stickman-video-director` (MIT). Media library is gitignored; `bash scripts/install-stickman-assets.sh` |
 | **Video Processing** | `ffmpeg`, `video-toolkit` | `digitalsamba/claude-code-video-toolkit` |
 | **TTS & Audio** | `text-to-speech`, `speech-to-text` (whisper, default STT), `azure-speech-to-text` (optional cloud STT), `music`, `sound-effects`, `elevenlabs`, `fish-audio-tts`, `agents`, `setup-api-key` | `elevenlabs/skills`, `digitalsamba/claude-code-video-toolkit`, local OpenMontage skill |
 | **Image Generation** | `flux-best-practices`, `bfl-api`, `grok-media` | `black-forest-labs/skills`, local OpenMontage skill |

@@ -23,6 +23,11 @@ See `skills/core/hyperframes.md` and `skills/meta/animation-runtime-selector.md`
 for the full decision matrix. Whichever runtime is chosen at proposal must
 be locked in `edit_decisions.render_runtime` and preserved through compose.
 
+Before authoring scenes, read `.agents/skills/motion-cinco-efectos/SKILL.md`
+and apply its ten techniques (mask reveals, chained motion, camera follow,
+morph transitions, narration sync, bounce easing, stagger, parallax,
+micro-movement, light-bar reveal) unless the brief says otherwise.
+
 ## Quick Reference Card
 
 ```
