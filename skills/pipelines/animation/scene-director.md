@@ -11,6 +11,7 @@ You are converting the script into a feasible animation plan. This is the stage 
 | Schema | `schemas/artifacts/scene_plan.schema.json` | Artifact validation |
 | Prior artifacts | `state.artifacts["script"]["script"]`, `state.artifacts["proposal"]["proposal_packet"]` | Beat map and tool path |
 | Playbook | Active style playbook | Palette, typography, motion consistency |
+| Motion | `.agents/skills/motion-cinco-efectos/SKILL.md` | Ten house techniques for every motion scene |
 
 ## Process
 

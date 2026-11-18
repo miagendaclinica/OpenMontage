@@ -61,6 +61,8 @@
 
 Convierte tu asistente de código con IA en un estudio completo de producción de vídeo. Describe lo que quieres en lenguaje corriente: tu agente se encarga de la investigación, el guion, la generación de assets, el montaje y la composición final.
 
+**Este fork (Mi Agenda Clínica):** la guía corta para abrir el repo en Cursor, instalar las herramientas locales y generar vídeo en español está en [ESTUDIO.md](ESTUDIO.md).
+
 **Distinción importante:** OpenMontage puede hacer vídeos basados en imágenes, pero también puede hacer un **vídeo de verdad** en flujos gratuitos o de código abierto: el agente construye un corpus a partir de metraje de archivo gratuito y de archivos abiertos, recupera clips de movimiento reales, los monta en una línea de tiempo y renderiza una pieza terminada. Eso no es el truco de siempre de "animar un puñado de fotos y llamarlo vídeo".
 
 <div align="center">

@@ -38,6 +38,25 @@ corpus/
 # User music library (personal royalty-free tracks — not part of repo)
 music_library/
 
+# Stickman skill media (~490 MB). Text/scripts are committed.
+# Install with: bash scripts/install-stickman-assets.sh
+.agents/skills/directing-stickman-videos/assets/**/*.ogg
+.agents/skills/directing-stickman-videos/assets/**/*.wav
+.agents/skills/directing-stickman-videos/assets/**/*.mp3
+.agents/skills/directing-stickman-videos/assets/**/*.flac
+.agents/skills/directing-stickman-videos/assets/**/*.m4a
+.agents/skills/directing-stickman-videos/assets/**/*.mp4
+.agents/skills/directing-stickman-videos/assets/**/*.webm
+.agents/skills/directing-stickman-videos/assets/**/*.mov
+.agents/skills/directing-stickman-videos/assets/**/*.png
+.agents/skills/directing-stickman-videos/assets/**/*.jpg
+.agents/skills/directing-stickman-videos/assets/**/*.jpeg
+.agents/skills/directing-stickman-videos/assets/**/*.gif
+.agents/skills/directing-stickman-videos/assets/**/*.ttf
+.agents/skills/directing-stickman-videos/assets/**/*.otf
+.agents/skills/directing-stickman-videos/assets/**/*.woff
+.agents/skills/directing-stickman-videos/assets/**/*.woff2
+
 # Environment & credentials
 .env
 .env.local

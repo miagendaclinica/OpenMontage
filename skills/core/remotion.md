@@ -8,8 +8,12 @@ data-driven batch rendering. For simple cuts, burns, and encodes, prefer FFmpeg 
 
 ## Relationship to Remotion Agent Skills
 
-The **installed agent skills** (`.agents/skills/remotion-best-practices/`) teach correct
-Remotion API usage — imports, timing, animation constraints, code patterns.
+The **installed agent skills** (`.agents/skills/remotion-best-practices/` plus the
+twelve sibling skills from `remotion-dev/skills`: `remotion-captions`, `remotion-create`,
+`remotion-docs`, `remotion-interactivity`, `remotion-license`, `remotion-maps`,
+`remotion-markup`, `remotion-multimedia`, `remotion-render`, `remotion-saas`,
+`remotion-studio`, `remotion-upgrade`) teach correct Remotion API usage.
+`remotion-best-practices/rules/` is the preserved mechanics codex for this composer.
 **This file** teaches how OpenMontage uses Remotion — which compositions map to pipeline
 stages, how artifacts flow in, and how renders are triggered.
 

@@ -40,7 +40,10 @@ class PiperTTS(BaseTool):
         "  pip install piper-tts\n"
         "Or download from https://github.com/rhasspy/piper/releases\n"
         "Then download a voice model:\n"
-        "  python -m piper.download_voices --download-dir ~/.piper/models en_US-lessac-medium"
+        "  python -m piper.download_voices --download-dir ~/.piper/models en_US-lessac-medium\n"
+        "Spanish voices for this studio (see ESTUDIO.md):\n"
+        "  python -m piper.download_voices --download-dir ~/.piper/models es_MX-ald-medium\n"
+        "  python -m piper.download_voices --download-dir ~/.piper/models es_ES-davefx-medium"
     )
     agent_skills = ["text-to-speech"]
 
